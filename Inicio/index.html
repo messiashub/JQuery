@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    <h1 class="titulo">Esse é um título H1</h1>
+
+    <h1 id="nao" style="display: none">Não saia agora!</h1>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+       /*  $(".titulo").hide();
+
+        setTimeout(()=>{
+            $('.titulo').show()
+        },3000); */
+
+    // EVENTOS
+
+    $('.titulo').click(()=>{
+        console.log('clicou');
+    });
+
+    $('.titulo').mouseenter(()=>{
+        console.log('entrou');
+    });
+    $('.titulo').mouseleave(()=>{
+        $('#nao').show()
+        /* console.log('mouse leave'); */
+    });
+    $('.titulo').dblclick(()=>{
+        console.log('dbclick');
+    })
+    </script>
+</body>
+</html>
