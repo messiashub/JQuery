@@ -2,7 +2,7 @@
 
 
 $('#button').click(()=>{
-    $('#green').animate({width: 500, height:500 ,borderRadius:250  },3000);
+    $('#green').animate({width: 500, height:500 ,borderRadius:250},3000);
 });
 
 $('#stop').click(()=>{
@@ -14,5 +14,13 @@ $('#voltar').click(()=>{
    
 })
 
+let quadrado = document.getElementById('green');
 
 
+aumentar = document.getElementById('js').addEventListener('click',aumento=>{
+    quadrado.style.width ='500px'
+    quadrado.style.height ='500px'
+
+    
+
+})
